@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('Background2.jpg'); /* Ganti dengan path gambar kamu */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding: 100px 20px 30px;
+   font-size: 56px;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 70px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 70px;
+  object-fit: cover;
+  border: 3px solid #c52809;
+  box-shadow: 0 0 15px rgba(197, 40, 9, 0.5);
+  animation: popup 0.8s ease-out;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #c52809;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.btn {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* transparan agar terlihat background */
+  border: 2px solid #c52809;
+  color: #cccccc;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #c52809;
+  color: #000;
+}
+
+.footer {
+  font-size: 16px;
+  margin: 40px 0 20px;
+  color: #cccccc;
+}
+.gallery {
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  color: #c52809;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #c52809;
+}
+
+.btn i {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
