@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="zoom-overlay" id="zoomOverlay"></div>
 
   <div class="header">
     <div class="brand">Portofolio Jall Artwork</div>
@@ -28,6 +29,28 @@
   <div class="footer">
     Semua karya dilindungi hak cipta oleh Jall Artwork. Terima kasih telah melihat portofolio kami.
   </div>
+
+  <script>
+  const overlay = document.getElementById("zoomOverlay");
+
+  // Event saat gambar di galeri diklik
+  document.querySelectorAll(".grid img").forEach(img => {
+    img.addEventListener("click", () => {
+      const zoomImg = img.cloneNode();
+      zoomImg.classList.add("zoom-img");
+
+      overlay.innerHTML = '';
+      overlay.appendChild(zoomImg);
+      overlay.style.display = "flex";
+    });
+  });
+
+  // Event tutup zoom saat overlay diklik
+  overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+    overlay.innerHTML = '';
+  });
+</script>
 
 </body>
 </html>
